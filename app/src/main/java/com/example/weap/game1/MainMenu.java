@@ -24,7 +24,7 @@ import android.widget.TextView;
 import android.support.v4.app.Fragment;
 public class MainMenu extends AppCompatActivity  implements Runnable {
 TextView oxygen,settings;
-long moxygen = 0;
+float moxygen = 0;
     private Handler handler = new Handler();
    FrameLayout frameLayout;
 
@@ -74,12 +74,12 @@ boolean test = false;
         t1.start();
         runThread();
         progressBar.setMax(100);
-
+        moxygen = (float) 0.1;
 oxygen.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
-        moxygen++;
+
        // progressBar.setProgress(moxygen);
         ProgressBarAnimation mProgressAnimation = new ProgressBarAnimation(progressBar, 1000);
 
@@ -96,7 +96,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
 
     @Override
     public void run() {
-        moxygen++;
+
 
     }
     private void runThread() {
@@ -105,14 +105,13 @@ oxygen.setOnClickListener(new View.OnClickListener() {
             public void run() {
                 while (true) {
                     try {
-                        moxygen++;
-                        moxygen = moxygen*moxygen;
 
+                        moxygen = (float) (moxygen * 1.01);
                         runOnUiThread(new Runnable() {
 
                             @Override
                             public void run() {
-                                oxygen.setText(String.valueOf(moxygen));
+                                oxygen.setText(String.valueOf(moxygen)+"Kg");
 
                             }
                         });
