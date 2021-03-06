@@ -68,10 +68,6 @@ boolean test = false;
                 pw.dismiss();
             }
         });
-
-        MainMenu m1=new MainMenu();
-        Thread t1 =new Thread(m1);
-        t1.start();
         runThread();
         progressBar.setMax(100);
         moxygen = (float) 0.1;
@@ -80,12 +76,12 @@ oxygen.setOnClickListener(new View.OnClickListener() {
     public void onClick(View v) {
 
 
-       // progressBar.setProgress(moxygen);
+        progressBar.setProgress((int) moxygen);
         ProgressBarAnimation mProgressAnimation = new ProgressBarAnimation(progressBar, 1000);
 
 
         /* Update progress later anywhere in code: */
-        //mProgressAnimation.setProgress(moxygen);
+        mProgressAnimation.setProgress((int)moxygen);
         oxygen.setText(String.valueOf(moxygen));
     }
 });
@@ -100,6 +96,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
 
     }
     private void runThread() {
+        final ProgressBarAnimation mProgressAnimation = new ProgressBarAnimation(progressBar, 1000);
 
         new Thread() {
             public void run() {
@@ -113,6 +110,10 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                             public void run() {
                                 moxygen += (float) 0.00000824454;
                                 oxygen.setText(String.valueOf(moxygen)+"Kg");
+                                progressBar.setProgress((int) moxygen);
+
+                                mProgressAnimation.setProgress((int)moxygen);
+
 
                             }
                         });

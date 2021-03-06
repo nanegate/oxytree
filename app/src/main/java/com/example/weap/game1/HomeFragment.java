@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.homefragment,container,false);
         context = getContext();
-        mLayoutManager = new GridLayoutManager(context,2);
+        mLayoutManager = new GridLayoutManager(context,1);
         mRecyclerView = (RecyclerView)view.findViewById(R.id.my_recycler_view);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setHasFixedSize(true);

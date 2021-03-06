@@ -21,7 +21,15 @@ public class Model {
         this.level = level;
     }
 
+    public String getAgacsayisi() {
+        return agacsayisi;
+    }
 
+    public void setAgacsayisi(String agacsayisi) {
+        this.agacsayisi = agacsayisi;
+    }
+
+    public String agacsayisi;
 
     public String agacname;
     public String level;
