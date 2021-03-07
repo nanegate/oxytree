@@ -6,6 +6,7 @@ a tree produces 0.00000375915 kilograms of oxygen per second
 # unix quest
 https://showcase.api.linx.twenty57.net/UnixTime/tounix?date=now
 
+<<<<<<< Updated upstream
 # tree name=1day,1second
 
 plane tree (çınar)= 0.92328767123,0.0000107359
@@ -17,6 +18,10 @@ pine (çam ağacı) = 0.32328767123,0.00000375915
 Beech (kayın ağacı) = 0.70328767123,0.00000817776
 
 # json
+=======
+# json
+
+>>>>>>> Stashed changes
 {
   "level": 0,
   "oxygen": 0,
