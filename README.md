@@ -6,12 +6,15 @@ a tree produces 0.00000375915 kilograms of oxygen per second
 # unix quest
 https://showcase.api.linx.twenty57.net/UnixTime/tounix?date=now
 
-# tree name
+# tree name=1day,1second
 
-plane tree (çınar)= 5.28
-Oak(meşe) = 5.16
-Birch tree(huş ağacı) = 2.97
-chest nut tree (kestane ağacı) = 5.19
+plane tree (çınar)= 0.92328767123,0.0000107359
+Oak(meşe) = 0.62328767123,0.00000724753
+Birch tree(huş ağacı) = 0.52328767123,0.00000608474
+chest nut tree (kestane ağacı) = 0.82328767123,0.00000957311
+maple tree (akçaağaç) = 0.40328767123,0.00000468939
+pine (çam ağacı) = 0.32328767123,0.00000375915
+Beech (kayın ağacı) = 0.70328767123,0.00000817776
 
 # json
 {
