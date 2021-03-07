@@ -18,10 +18,6 @@ pine (çam ağacı) = 0.32328767123,0.00000375915
 Beech (kayın ağacı) = 0.70328767123,0.00000817776
 
 # json
-=======
-# json
-
->>>>>>> Stashed changes
 {
   "level": 0,
   "oxygen": 0,
