@@ -2,6 +2,8 @@ package com.example.weap.game1;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.media.Image;
@@ -11,6 +13,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -36,6 +39,9 @@ boolean test = false;
     Button bulut;
     private int ekranY = 0;
     private int ekranX = 0;
+    SharedPreferences sharedpreferences;
+    public static final String jsonpref = "jsondata";
+
     @SuppressLint({"ResourceAsColor", "WrongConstant"})
     @Override
     @SuppressWarnings("deprecation")
@@ -46,6 +52,8 @@ boolean test = false;
         FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
         fm.add(R.id.frame,new com.example.weap.game1.HomeFragment());
         fm.commit();
+        sharedpreferences = getSharedPreferences(jsonpref, Context.MODE_PRIVATE);
+
         oxygen = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         settings = (TextView)findViewById(R.id.textView4);
@@ -71,6 +79,10 @@ boolean test = false;
         runThread();
         progressBar.setMax(100);
         moxygen = (float) 0.1;
+Sharedpref(sharedpreferences);
+
+
+
 oxygen.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
@@ -108,7 +120,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
 
                             @Override
                             public void run() {
-                                moxygen += (float) 0.00000824454;
+                                moxygen += (float) 0.0824454;
                                 oxygen.setText(String.valueOf(moxygen)+"Kg");
                                 progressBar.setProgress((int) moxygen);
 
@@ -124,5 +136,66 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                 }
             }
         }.start();
+    }
+
+    private void Sharedpref(SharedPreferences shrPref) {
+
+        SharedPreferences.Editor editor = shrPref.edit();
+        if (shrPref.getString(jsonpref,"").isEmpty()){
+            Log.d("jsonPrefisempty", "true");
+            editor.putString("jsondata", "{\n" +
+                    "  \"level\": 0,\n" +
+                    "  \"oxygen\": 0,\n" +
+                    "  \"gems\": 0,\n" +
+                    "  \"oxygen-carpani\": 0,\n" +
+                    "  \"agac-1\": {\n" +
+                    "    \"agac-name\": \"Pine\",\n" +
+                    "    \"agac-sayisi\": 1,\n" +
+                    "    \"agac-carpani\": \"0.00000375915\"\n" +
+                    "  },\n" +
+                    "  \"agac-2\": {\n" +
+                    "    \"agac-name\": \"Maple tree\",\n" +
+                    "    \"agac-sayisi\": 1,\n" +
+                    "    \"agac-carpani\": \"0.00000468939\"\n" +
+                    "  },\n" +
+                    "  \"agac-3\": {\n" +
+                    "    \"agac-name\": \"Birch tree\",\n" +
+                    "    \"agac-sayisi\": 1,\n" +
+                    "    \"agac-carpani\": \"0.00000608474\"\n" +
+                    "  },\n" +
+                    "  \"agac-4\": {\n" +
+                    "    \"agac-name\": \"Oak\",\n" +
+                    "    \"agac-sayisi\": 1,\n" +
+                    "    \"agac-carpani\": \"0.00000724753\"\n" +
+                    "  },\n" +
+                    "  \"agac-5\": {\n" +
+                    "    \"agac-name\": \"Beech\",\n" +
+                    "    \"agac-sayisi\": 1,\n" +
+                    "    \"agac-carpani\": \"0.00000817776\"\n" +
+                    "  },\n" +
+                    "  \"agac-6\": {\n" +
+                    "    \"agac-name\": \"Chestnut tree\",\n" +
+                    "    \"agac-sayisi\": 1,\n" +
+                    "    \"agac-carpani\": \"0.00000957311\"\n" +
+                    "  },\n" +
+                    "  \"agac-7\": {\n" +
+                    "    \"agac-name\": \"Plane tree\",\n" +
+                    "    \"agac-sayisi\": 1,\n" +
+                    "    \"agac-carpani\": \"0.0000107359\"\n" +
+                    "  }\n" +
+                    "}");
+            editor.commit();
+            JsonStuff jsonStuff = new JsonStuff();
+            jsonStuff.DeployJson(shrPref.getString(jsonpref,""));
+
+        }
+        else {
+            JsonStuff jsonStuff = new JsonStuff();
+            jsonStuff.DeployJson(shrPref.getString(jsonpref,""));
+
+
+        }
+
+
     }
 }
