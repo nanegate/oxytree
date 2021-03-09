@@ -53,7 +53,6 @@ boolean test = false;
         fm.add(R.id.frame,new com.example.weap.game1.HomeFragment());
         fm.commit();
         sharedpreferences = getSharedPreferences(jsonpref, Context.MODE_PRIVATE);
-
         oxygen = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         settings = (TextView)findViewById(R.id.textView4);
@@ -65,7 +64,7 @@ boolean test = false;
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pw.showAtLocation(findViewById(R.id.frame), Gravity.CENTER, 0, 0);
+                pw.showAtLocation(findViewById(R.id.frame), Gravity.TOP, 100, 100);
             }
         });
         final ImageView Imagesettings =v.findViewById(R.id.imageView4);
@@ -114,8 +113,6 @@ oxygen.setOnClickListener(new View.OnClickListener() {
             public void run() {
                 while (true) {
                     try {
-
-
                         runOnUiThread(new Runnable() {
 
                             @Override
@@ -148,37 +145,37 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "  \"oxygen\": 0,\n" +
                     "  \"gems\": 0,\n" +
                     "  \"oxygen-carpani\": 0,\n" +
-                    "  \"agac-1\": {\n" +
+                    "  \"agac-0\": {\n" +
                     "    \"agac-name\": \"Pine\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.00000375915\"\n" +
                     "  },\n" +
-                    "  \"agac-2\": {\n" +
+                    "  \"agac-1\": {\n" +
                     "    \"agac-name\": \"Maple tree\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.00000468939\"\n" +
                     "  },\n" +
-                    "  \"agac-3\": {\n" +
+                    "  \"agac-2\": {\n" +
                     "    \"agac-name\": \"Birch tree\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.00000608474\"\n" +
                     "  },\n" +
-                    "  \"agac-4\": {\n" +
+                    "  \"agac-3\": {\n" +
                     "    \"agac-name\": \"Oak\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.00000724753\"\n" +
                     "  },\n" +
-                    "  \"agac-5\": {\n" +
+                    "  \"agac-4\": {\n" +
                     "    \"agac-name\": \"Beech\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.00000817776\"\n" +
                     "  },\n" +
-                    "  \"agac-6\": {\n" +
+                    "  \"agac-5\": {\n" +
                     "    \"agac-name\": \"Chestnut tree\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.00000957311\"\n" +
                     "  },\n" +
-                    "  \"agac-7\": {\n" +
+                    "  \"agac-6\": {\n" +
                     "    \"agac-name\": \"Plane tree\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.0000107359\"\n" +

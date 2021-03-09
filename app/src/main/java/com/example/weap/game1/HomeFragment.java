@@ -46,21 +46,21 @@ public class HomeFragment extends Fragment {
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        getContactList();
+        deploydata();
         return view;
     }
 
-    private void getContactList(){
-        Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), R.drawable.ic_tree,  getContext().getTheme());
+    public void deploydata(){
+
         for (int b = 0; b<=5;b++){
-    Model asd = new Model();
-    asd.setAgacname("Agaç");
-    asd.setLevel("0");
-    asd.setImage(vectorDrawable);
-    contactList.add(b,asd);
+            Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), R.drawable.ic_tree,  getContext().getTheme());
+
+            Model model = new Model();
+            model.setAgacname("Agaç");
+            model.setLevel("0");
+            model.setImage(vectorDrawable);
+    contactList.add(b,model);
 }
-
-
         MyAdapter rcAdapter = new MyAdapter(contactList,context);
         mRecyclerView.setAdapter(rcAdapter);
     }
