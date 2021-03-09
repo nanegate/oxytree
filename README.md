@@ -23,37 +23,37 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
   "oxygen": 0,
   "gems": 0,
   "oxygen-carpani": 0,
-  "agac-1": {
+  "agac-0": {
     "agac-name": "Pine",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000375915"
   },
-  "agac-2": {
+  "agac-1": {
     "agac-name": "Maple tree",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000468939"
   },
-  "agac-3": {
+  "agac-2": {
     "agac-name": "Birch tree",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000608474"
   },
-  "agac-4": {
+  "agac-3": {
     "agac-name": "Oak",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000724753"
   },
-  "agac-5": {
+  "agac-4": {
     "agac-name": "Beech",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000817776"
   },
-  "agac-6": {
+  "agac-5": {
     "agac-name": "Chestnut tree",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000957311"
   },
-  "agac-7": {
+  "agac-6": {
     "agac-name": "Plane tree",
     "agac-sayisi": 1,
     "agac-carpani": "0.0000107359"
