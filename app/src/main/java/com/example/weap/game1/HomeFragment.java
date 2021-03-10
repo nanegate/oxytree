@@ -2,6 +2,7 @@ package com.example.weap.game1;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ColorSpace;
@@ -51,15 +52,29 @@ public class HomeFragment extends Fragment {
     }
 
     public void deploydata(){
+            JsonStuff jsonStuff = new JsonStuff();
+            JSONObject jsonObject =  jsonStuff.getirjson();
+            Resources resources = context.getResources();
+        String imageName = "ic_tree";
 
-        for (int b = 0; b<=5;b++){
-            Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), R.drawable.ic_tree,  getContext().getTheme());
 
-            Model model = new Model();
-            model.setAgacname("Agaç");
-            model.setLevel("0");
-            model.setImage(vectorDrawable);
-    contactList.add(b,model);
+        for (int b = -1; b<=6;b++){
+
+            try {
+                JSONObject agac = jsonObject.getJSONObject("agac-"+String.valueOf(b));
+                String agac_name  = agac.getString("agac-name");
+                final int resourceId = resources.getIdentifier(imageName, "drawable", context.getPackageName());
+                Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), resourceId,  getContext().getTheme());
+                Model model = new Model();
+                model.setAgacname(agac_name);
+                model.setLevel("0");
+                model.setImage(vectorDrawable);
+                contactList.add(b,model);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
 }
         MyAdapter rcAdapter = new MyAdapter(contactList,context);
         mRecyclerView.setAdapter(rcAdapter);
