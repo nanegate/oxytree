@@ -18,6 +18,8 @@ pine (çam ağacı) = 0.32328767123,0.00000375915
 Beech (kayın ağacı) = 0.70328767123,0.00000817776
 
 # json
+
+
 {
   "level": 0,
   "oxygen": 0,
@@ -27,42 +29,49 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Pine",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000375915",
+    "image_name": "ic_tree-0-0",
     "agac-level": 1
   },
   "agac-1": {
     "agac-name": "Maple tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000468939",
+    "image_name": "ic_tree",
     "agac-level": 1
   },
   "agac-2": {
     "agac-name": "Birch tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000608474",
+    "image_name": "image_name_2",
     "agac-level": 1
   },
   "agac-3": {
     "agac-name": "Oak",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000724753",
+    "image_name": "image_name_2",
     "agac-level": 1
   },
   "agac-4": {
     "agac-name": "Beech",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000817776",
+    "image_name": "image_name_2",
     "agac-level": 1
   },
   "agac-5": {
     "agac-name": "Chestnut tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000957311",
+    "image_name": "image_name_2",
     "agac-level": 1
   },
   "agac-6": {
     "agac-name": "Plane tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.0000107359",
+    "image_name": "image_name_2",
     "agac-level": 1
   }
 }
