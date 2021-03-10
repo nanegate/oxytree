@@ -58,7 +58,7 @@ public class HomeFragment extends Fragment {
         String imageName = "ic_tree";
 
 
-        for (int b = -1; b<=6;b++){
+        for (int b = 0;b<=6;b++){
 
             try {
                 JSONObject agac = jsonObject.getJSONObject("agac-"+String.valueOf(b));
@@ -69,7 +69,7 @@ public class HomeFragment extends Fragment {
                 model.setAgacname(agac_name);
                 model.setLevel("0");
                 model.setImage(vectorDrawable);
-                contactList.add(b,model);
+                contactList.add(model);
 
             } catch (JSONException e) {
                 e.printStackTrace();
