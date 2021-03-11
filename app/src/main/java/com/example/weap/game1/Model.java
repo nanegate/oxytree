@@ -13,28 +13,38 @@ public class Model {
         this.agacname = agacname;
     }
 
-    public String getLevel() {
-        return level;
-    }
 
-    public void setLevel(String level) {
-        this.level = level;
-    }
-
-    public String getAgacsayisi() {
+    public int getAgacsayisi() {
         return agacsayisi;
     }
 
-    public void setAgacsayisi(String agacsayisi) {
+    public void setAgacsayisi(int agacsayisi) {
         this.agacsayisi = agacsayisi;
     }
 
-    public String agacsayisi;
+    public int agacsayisi;
 
     public String agacname;
-    public String level;
 
+    public int getLevel() {
+        return level;
+    }
 
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int level;
+
+    public int getAgac_fiyat() {
+        return agac_fiyat;
+    }
+
+    public void setAgac_fiyat(int agac_fiyat) {
+        this.agac_fiyat = agac_fiyat;
+    }
+
+    public int agac_fiyat;
 
     public Drawable getImage() {
         return image;

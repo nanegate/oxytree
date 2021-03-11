@@ -144,41 +144,55 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "  \"level\": 0,\n" +
                     "  \"oxygen\": 0,\n" +
                     "  \"gems\": 0,\n" +
-                    "  \"oxygen-carpani\": 0,\n" +
+                    "  \"oxygen-carpani\": 1,\n" +
                     "  \"agac-0\": {\n" +
                     "    \"agac-name\": \"Pine\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
-                    "    \"agac-carpani\": \"0.00000375915\"\n" +
+                    "    \"agac-carpani\": \"0.00000375915\",\n" +
+                    "    \"image_name\": \"ic_tree-0-0\",\n" +
+                    "    \"agac-level\": 1\n" +
                     "  },\n" +
                     "  \"agac-1\": {\n" +
                     "    \"agac-name\": \"Maple tree\",\n" +
-                    "    \"agac-sayisi\": 1,\n" +
-                    "    \"agac-carpani\": \"0.00000468939\"\n" +
+                    "    \"agac-sayisi\": 0,\n" +
+                    "    \"agac-carpani\": \"0.00000468939\",\n" +
+                    "    \"image_name\": \"ic_tree-1-0\",\n" +
+                    "    \"agac-level\": 1\n" +
                     "  },\n" +
                     "  \"agac-2\": {\n" +
                     "    \"agac-name\": \"Birch tree\",\n" +
-                    "    \"agac-sayisi\": 1,\n" +
-                    "    \"agac-carpani\": \"0.00000608474\"\n" +
+                    "    \"agac-sayisi\": 0,\n" +
+                    "    \"agac-carpani\": \"0.00000608474\",\n" +
+                    "    \"image_name\": \"ic_tree-2-0\",\n" +
+                    "    \"agac-level\": 1\n" +
                     "  },\n" +
                     "  \"agac-3\": {\n" +
                     "    \"agac-name\": \"Oak\",\n" +
-                    "    \"agac-sayisi\": 1,\n" +
-                    "    \"agac-carpani\": \"0.00000724753\"\n" +
+                    "    \"agac-sayisi\": 0,\n" +
+                    "    \"agac-carpani\": \"0.00000724753\",\n" +
+                    "    \"image_name\": \"ic_tree-3-0\",\n" +
+                    "    \"agac-level\": 1\n" +
                     "  },\n" +
                     "  \"agac-4\": {\n" +
                     "    \"agac-name\": \"Beech\",\n" +
-                    "    \"agac-sayisi\": 1,\n" +
-                    "    \"agac-carpani\": \"0.00000817776\"\n" +
+                    "    \"agac-sayisi\": 0,\n" +
+                    "    \"agac-carpani\": \"0.00000817776\",\n" +
+                    "    \"image_name\": \"ic_tree-4-0\",\n" +
+                    "    \"agac-level\": 1\n" +
                     "  },\n" +
                     "  \"agac-5\": {\n" +
                     "    \"agac-name\": \"Chestnut tree\",\n" +
-                    "    \"agac-sayisi\": 1,\n" +
-                    "    \"agac-carpani\": \"0.00000957311\"\n" +
+                    "    \"agac-sayisi\": 0,\n" +
+                    "    \"agac-carpani\": \"0.00000957311\",\n" +
+                    "    \"image_name\": \"ic_tree-5-0\",\n" +
+                    "    \"agac-level\": 1\n" +
                     "  },\n" +
                     "  \"agac-6\": {\n" +
                     "    \"agac-name\": \"Plane tree\",\n" +
-                    "    \"agac-sayisi\": 1,\n" +
-                    "    \"agac-carpani\": \"0.0000107359\"\n" +
+                    "    \"agac-sayisi\": 0,\n" +
+                    "    \"agac-carpani\": \"0.0000107359\",\n" +
+                    "    \"image_name\": \"ic_tree-6-0\",\n" +
+                    "    \"agac-level\": 1\n" +
                     "  }\n" +
                     "}");
             editor.commit();

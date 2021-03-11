@@ -1,4 +1,4 @@
-# oxytree
+﻿# oxytree
 Tapp games
 a tree produces 0.32328767123 kilograms of oxygen per day
 a tree produces 0.00000375915 kilograms of oxygen per second
@@ -19,12 +19,11 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
 
 # json
 
-
 {
   "level": 0,
   "oxygen": 0,
   "gems": 0,
-  "oxygen-carpani": 0,
+  "oxygen-carpani": 1,
   "agac-0": {
     "agac-name": "Pine",
     "agac-sayisi": 1,
@@ -36,42 +35,42 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Maple tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000468939",
-    "image_name": "ic_tree",
+    "image_name": "ic_tree-1-0",
     "agac-level": 1
   },
   "agac-2": {
     "agac-name": "Birch tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000608474",
-    "image_name": "image_name_2",
+    "image_name": "ic_tree-2-0",
     "agac-level": 1
   },
   "agac-3": {
     "agac-name": "Oak",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000724753",
-    "image_name": "image_name_2",
+    "image_name": "ic_tree-3-0",
     "agac-level": 1
   },
   "agac-4": {
     "agac-name": "Beech",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000817776",
-    "image_name": "image_name_2",
+    "image_name": "ic_tree-4-0",
     "agac-level": 1
   },
   "agac-5": {
     "agac-name": "Chestnut tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000957311",
-    "image_name": "image_name_2",
+    "image_name": "ic_tree-5-0",
     "agac-level": 1
   },
   "agac-6": {
     "agac-name": "Plane tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.0000107359",
-    "image_name": "image_name_2",
+    "image_name": "ic_tree-6-0",
     "agac-level": 1
   }
 }

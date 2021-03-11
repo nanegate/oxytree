@@ -75,7 +75,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         //holder.mTextView.setText(mDataset.get(position).getName());
         Log.d("TEST","Printing Names onBindView Holder"+mDataset.get(position).getAgacname());
         holder.nameText.setText(mDataset.get(position).getAgacname());
-        holder.phoneText.setText(mDataset.get(position).getLevel());
+        holder.phoneText.setText(String.valueOf(mDataset.get(position).getAgacsayisi()));
         holder.image.setImageDrawable(mDataset.get(position).getImage());
 
     }

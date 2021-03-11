@@ -56,6 +56,7 @@ public class HomeFragment extends Fragment {
             JSONObject jsonObject =  jsonStuff.getirjson();
             Resources resources = context.getResources();
         String imageName = "ic_tree";
+        final int resourceId = resources.getIdentifier(imageName, "drawable", context.getPackageName());
 
 
         for (int b = 0;b<=6;b++){
@@ -63,11 +64,11 @@ public class HomeFragment extends Fragment {
             try {
                 JSONObject agac = jsonObject.getJSONObject("agac-"+String.valueOf(b));
                 String agac_name  = agac.getString("agac-name");
-                final int resourceId = resources.getIdentifier(imageName, "drawable", context.getPackageName());
+                int level  = agac.getInt("agac-sayisi");
                 Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), resourceId,  getContext().getTheme());
                 Model model = new Model();
                 model.setAgacname(agac_name);
-                model.setLevel("0");
+                model.setAgacsayisi(level);
                 model.setImage(vectorDrawable);
                 contactList.add(model);
 
@@ -78,6 +79,13 @@ public class HomeFragment extends Fragment {
 }
         MyAdapter rcAdapter = new MyAdapter(contactList,context);
         mRecyclerView.setAdapter(rcAdapter);
+    }
+
+
+    public int percentage(int price) {
+
+        int treeprice = (price/100)*12;
+        return price;
     }
 
 
