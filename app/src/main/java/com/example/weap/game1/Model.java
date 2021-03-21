@@ -5,6 +5,14 @@ import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
 public class Model {
+
+    public int level;
+    public String agacname;
+    public float agacarpani;
+    public int agac_fiyat;
+    public Drawable image;
+    public int agacsayisi;
+    
     public String getAgacname() {
         return agacname;
     }
@@ -22,9 +30,16 @@ public class Model {
         this.agacsayisi = agacsayisi;
     }
 
-    public int agacsayisi;
 
-    public String agacname;
+
+
+    public float getAgacarpani() {
+        return agacarpani;
+    }
+
+    public void setAgacarpani(float agacarpani) {
+        this.agacarpani = agacarpani;
+    }
 
     public int getLevel() {
         return level;
@@ -34,7 +49,7 @@ public class Model {
         this.level = level;
     }
 
-    public int level;
+
 
     public int getAgac_fiyat() {
         return agac_fiyat;
@@ -44,7 +59,6 @@ public class Model {
         this.agac_fiyat = agac_fiyat;
     }
 
-    public int agac_fiyat;
 
     public Drawable getImage() {
         return image;
@@ -54,7 +68,6 @@ public class Model {
         this.image = image;
     }
 
-    public Drawable image;
 
 
 }
