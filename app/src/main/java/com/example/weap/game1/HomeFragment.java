@@ -66,6 +66,7 @@ public class HomeFragment extends Fragment {
                 String agac_name  = agac.getString("agac-name");
                 int level  = agac.getInt("agac-sayisi");
                 Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), resourceId,  getContext().getTheme());
+
                 Model model = new Model();
                 model.setAgacname(agac_name);
                 model.setAgacsayisi(level);

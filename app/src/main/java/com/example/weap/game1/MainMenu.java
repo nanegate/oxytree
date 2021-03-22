@@ -149,6 +149,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "    \"agac-name\": \"Pine\",\n" +
                     "    \"agac-sayisi\": 1,\n" +
                     "    \"agac-carpani\": \"0.00000375915\",\n" +
+                    "    \"agac-fiyati\": \"0.0001879575\",\n" +
                     "    \"image_name\": \"ic_tree-0-0\",\n" +
                     "    \"agac-level\": 1\n" +
                     "  },\n" +
@@ -156,6 +157,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "    \"agac-name\": \"Maple tree\",\n" +
                     "    \"agac-sayisi\": 0,\n" +
                     "    \"agac-carpani\": \"0.00000468939\",\n" +
+                    "    \"agac-fiyati\": \"0.0002344695\",\n" +
                     "    \"image_name\": \"ic_tree-1-0\",\n" +
                     "    \"agac-level\": 1\n" +
                     "  },\n" +
@@ -163,6 +165,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "    \"agac-name\": \"Birch tree\",\n" +
                     "    \"agac-sayisi\": 0,\n" +
                     "    \"agac-carpani\": \"0.00000608474\",\n" +
+                    "    \"agac-fiyati\": \"0.000304237\",\n" +
                     "    \"image_name\": \"ic_tree-2-0\",\n" +
                     "    \"agac-level\": 1\n" +
                     "  },\n" +
@@ -170,6 +173,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "    \"agac-name\": \"Oak\",\n" +
                     "    \"agac-sayisi\": 0,\n" +
                     "    \"agac-carpani\": \"0.00000724753\",\n" +
+                    "    \"agac-fiyati\": \"0.0003623765\",\n" +
                     "    \"image_name\": \"ic_tree-3-0\",\n" +
                     "    \"agac-level\": 1\n" +
                     "  },\n" +
@@ -177,6 +181,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "    \"agac-name\": \"Beech\",\n" +
                     "    \"agac-sayisi\": 0,\n" +
                     "    \"agac-carpani\": \"0.00000817776\",\n" +
+                    "    \"agac-fiyati\": \"0.000408888\",\n" +
                     "    \"image_name\": \"ic_tree-4-0\",\n" +
                     "    \"agac-level\": 1\n" +
                     "  },\n" +
@@ -184,6 +189,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "    \"agac-name\": \"Chestnut tree\",\n" +
                     "    \"agac-sayisi\": 0,\n" +
                     "    \"agac-carpani\": \"0.00000957311\",\n" +
+                    "    \"agac-fiyati\": \"0.0004786555\",\n" +
                     "    \"image_name\": \"ic_tree-5-0\",\n" +
                     "    \"agac-level\": 1\n" +
                     "  },\n" +
@@ -191,6 +197,7 @@ oxygen.setOnClickListener(new View.OnClickListener() {
                     "    \"agac-name\": \"Plane tree\",\n" +
                     "    \"agac-sayisi\": 0,\n" +
                     "    \"agac-carpani\": \"0.0000107359\",\n" +
+                    "    \"agac-fiyati\": \"0.000536795\",\n" +
                     "    \"image_name\": \"ic_tree-6-0\",\n" +
                     "    \"agac-level\": 1\n" +
                     "  }\n" +
