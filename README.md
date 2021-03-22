@@ -28,6 +28,7 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Pine",
     "agac-sayisi": 1,
     "agac-carpani": "0.00000375915",
+    "agac-fiyati": "0.0001879575",
     "image_name": "ic_tree-0-0",
     "agac-level": 1
   },
@@ -35,6 +36,7 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Maple tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000468939",
+    "agac-fiyati": "0.0002344695",
     "image_name": "ic_tree-1-0",
     "agac-level": 1
   },
@@ -42,6 +44,7 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Birch tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000608474",
+    "agac-fiyati": "0.000304237",
     "image_name": "ic_tree-2-0",
     "agac-level": 1
   },
@@ -49,6 +52,7 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Oak",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000724753",
+    "agac-fiyati": "0.0003623765",
     "image_name": "ic_tree-3-0",
     "agac-level": 1
   },
@@ -56,6 +60,7 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Beech",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000817776",
+    "agac-fiyati": "0.000408888",
     "image_name": "ic_tree-4-0",
     "agac-level": 1
   },
@@ -63,6 +68,7 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Chestnut tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.00000957311",
+    "agac-fiyati": "0.0004786555",
     "image_name": "ic_tree-5-0",
     "agac-level": 1
   },
@@ -70,6 +76,7 @@ Beech (kayın ağacı) = 0.70328767123,0.00000817776
     "agac-name": "Plane tree",
     "agac-sayisi": 0,
     "agac-carpani": "0.0000107359",
+    "agac-fiyati": "0.000536795",
     "image_name": "ic_tree-6-0",
     "agac-level": 1
   }
