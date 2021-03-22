@@ -9,7 +9,7 @@ public class Model {
     public int level;
     public String agacname;
     public float agacarpani;
-    public int agac_fiyat;
+    public int agacfiyat;
     public Drawable image;
     public int agacsayisi;
     
@@ -20,18 +20,16 @@ public class Model {
     public void setAgacname(String agacname) {
         this.agacname = agacname;
     }
+    //
 
-
-    public int getAgacsayisi() {
-        return agacsayisi;
+    public int getLevel() {
+        return level;
     }
 
-    public void setAgacsayisi(int agacsayisi) {
-        this.agacsayisi = agacsayisi;
+    public void setLevel(int level) {
+        this.level = level;
     }
-
-
-
+    //
 
     public float getAgacarpani() {
         return agacarpani;
@@ -41,25 +39,7 @@ public class Model {
         this.agacarpani = agacarpani;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-
-
-    public int getAgac_fiyat() {
-        return agac_fiyat;
-    }
-
-    public void setAgac_fiyat(int agac_fiyat) {
-        this.agac_fiyat = agac_fiyat;
-    }
-
-
+    //
     public Drawable getImage() {
         return image;
     }
@@ -68,6 +48,22 @@ public class Model {
         this.image = image;
     }
 
+    //
+    public int getAgacfiyat() {
+        return agacfiyat;
+    }
 
+    public void setAgacfiyat(int agacfiyat) {
+        this.agacfiyat = agacfiyat;
+    }
+    //
+
+    public int getAgacsayisi() {
+        return agacsayisi;
+    }
+
+    public void setAgacsayisi(int agacsayisi) {
+        this.agacsayisi = agacsayisi;
+    }
 
 }
