@@ -14,10 +14,12 @@ import android.support.graphics.drawable.VectorDrawableCompat;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import java.math.BigDecimal;
 
 import com.google.gson.Gson;
 
@@ -64,12 +66,21 @@ public class HomeFragment extends Fragment {
             try {
                 JSONObject agac = jsonObject.getJSONObject("agac-"+String.valueOf(b));
                 String agac_name  = agac.getString("agac-name");
-                int level  = agac.getInt("agac-sayisi");
-                Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), resourceId,  getContext().getTheme());
+                int agac_sayisi  = agac.getInt("agac-sayisi");
+                double agac_carpani = agac.getDouble("agac-carpani");
+                double agac_fiyat = agac.getDouble("agac-fiyati");
+                int agac_level  = agac.getInt("agac-level");
 
+
+                Log.d("FLOAT",String.valueOf(agac_carpani));
+
+                Drawable vectorDrawable = VectorDrawableCompat.create(getResources(), resourceId,  getContext().getTheme());
                 Model model = new Model();
                 model.setAgacname(agac_name);
-                model.setAgacsayisi(level);
+                model.setAgacsayisi(agac_sayisi);
+                model.setAgacarpani(agac_carpani);
+                model.setAgacfiyat(agac_fiyat);
+                model.setAgaclevel(agac_level);
                 model.setImage(vectorDrawable);
                 contactList.add(model);
 
@@ -79,7 +90,10 @@ public class HomeFragment extends Fragment {
 
 }
         MyAdapter rcAdapter = new MyAdapter(contactList,context);
+        JsonStuff.oxygen = rcAdapter.oxygen_calculate();
         mRecyclerView.setAdapter(rcAdapter);
+        rcAdapter.notifyDataSetChanged();
+
     }
 
 

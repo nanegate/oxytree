@@ -117,7 +117,8 @@ oxygen.setOnClickListener(new View.OnClickListener() {
 
                             @Override
                             public void run() {
-                                moxygen += (float) 0.9824454;
+
+                                moxygen += JsonStuff.oxygen;
                                 oxygen.setText(String.valueOf(moxygen)+"Kg");
                                 progressBar.setProgress((int) moxygen);
 

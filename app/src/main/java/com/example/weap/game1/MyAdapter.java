@@ -41,6 +41,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
                     Toast.makeText(v.getContext(),"Position: "+getAdapterPosition(), Toast.LENGTH_SHORT).show();
                 }
             });
@@ -66,7 +68,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
+public double oxygen_calculate() {
+        double soxygen = 0;
+        for(int i = 0; i<=6;i++) {
+            soxygen += mDataset.get(i).getAgacarpani();
+        }
 
+
+
+
+        return soxygen;
+}
     // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
@@ -75,8 +87,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         //holder.mTextView.setText(mDataset.get(position).getName());
         Log.d("TEST","Printing Names onBindView Holder"+mDataset.get(position).getAgacname());
         holder.nameText.setText(mDataset.get(position).getAgacname());
-        holder.phoneText.setText(String.valueOf(mDataset.get(position).getAgacsayisi()));
+        holder.phoneText.setText(String.valueOf(mDataset.get(position).getAgacarpani()));
         holder.image.setImageDrawable(mDataset.get(position).getImage());
+
 
     }
 
