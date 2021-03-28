@@ -32,12 +32,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         public TextView nameText;
         public TextView phoneText;
         public ImageView image;
+        public ImageView buybutton;
+
         @SuppressLint("WrongViewCast")
         public ViewHolder(View v) {
             super(v);
             nameText = v.findViewById(R.id.name_text);
             phoneText = v.findViewById(R.id.phone_text);
             image = (ImageView) v.findViewById(R.id.imgAvatar);
+            buybutton = (ImageView) v.findViewById(R.id.imgAvatar);
+
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
